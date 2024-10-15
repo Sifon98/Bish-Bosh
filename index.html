@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="bishbosh.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Bish-Bosh 2.0</h1>
+    </header>
+    <section id="explanation">
+        <p>This exercize is about JavaScript and how to get user inputs from HTML and how to use those inputs to then generate outputs for the website. 
+            Here is a quick explanation of how the program works. Input 2 numerical values, X and Y. These values should not be the same. After that input a number
+            in the LOOP field that will tell the program how many times it should loop and essentially it will loop from number 1 to the number you choose to input. 
+            This is important since the program will check to see if for example X, is able to be divisible by the current number in the loop. If both X and Y are divisible
+            the output will be Bish-Bosh, if only one number is correct the output will be Bish or Bosh respectively.</p>
+    </section>
+    <section id="bish-bosh">
+        <div class="inputs">
+            <div><label for="first-number">X:</label><input type="number" name="first-number" id="first-number"></div>
+            <div><label for="second-number">Y:</label><input type="number" name="second-number" id="second-number"></div>
+            <div><label for="third-number">LOOP:</label><input type="number" name="third-number" id="third-number"></div>
+        </div>
+        <button id="click-button">Generate</button>
+        <div>
+            <ul id="output">
+                <!-- The list is created here from the js file -->
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <p>© Alexander Gustafsson</p>
+    </footer>
+</body>
+</html>
